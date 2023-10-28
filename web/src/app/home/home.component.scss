@@ -1,0 +1,47 @@
+:host {
+  background: #E5E5E5;
+}
+
+.container {
+  max-width: 480px;
+  width: calc(100% - 16px);
+  height: calc(100vh - 210px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logoutbutton {
+  width: 100%;
+  height: 50px;
+  ownid-auth-button { width: 100%; }
+}
+
+.content {
+  margin-top: 40px;
+  padding: 24px 24px 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #D0D0D0;
+  box-shadow: 1px 4px 88.5px rgba(0, 0, 0, 0.05);
+  border-radius: 9px;
+  &.padded {
+    padding: 60px;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contenedor{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+
+}
+
+.contenedor > div {
+  margin-bottom: 10px;
+}
+

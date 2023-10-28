@@ -31,7 +31,9 @@ export class LoginComponent {
             const data = await fido2Get(publicKey,username);
             this.http.post<boolean>('/login/finish', data).subscribe((data: any) => {
                 if (data.res) {
-                    alert("Successfully authenticated using webAuthn");
+                    alert("Successfully authenticated as " + username + " using webAuthn");
+                    window.location.href = '/home'
+                    return username;
                 }
             });
         });

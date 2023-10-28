@@ -20,11 +20,13 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatMenuModule} from "@angular/material/menu";
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    HomeComponent,
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
@@ -44,6 +46,7 @@ import { FooterComponent } from './shared/footer/footer.component';
         RouterModule.forRoot([
             {path: 'login', component: LoginComponent},
             {path: 'registration', component: RegisterComponent},
+            {path: 'home', component: HomeComponent},
             {path: '', redirectTo: '/login', pathMatch: 'full'},
         ]),
         MatSliderModule,

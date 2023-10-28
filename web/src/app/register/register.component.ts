@@ -32,6 +32,7 @@ export class RegisterComponent {
             this.http.post<boolean>('/register/finish', data).subscribe((data: boolean) => {
                 if (data) {
                     alert("Successfully created using webAuthn");
+                    window.location.href = '/login'
                 }
             })
         });
